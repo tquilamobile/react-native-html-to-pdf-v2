@@ -142,7 +142,7 @@ RCT_EXPORT_METHOD(convert:(NSDictionary *)options
                             pdfBase64, @"base64",
                             _filePath, @"filePath", nil];
 
-      _resolveBlock(_filePath);
+      _resolveBlock(data);
     } else {
         NSError *error;
         _rejectBlock(RCTErrorUnspecified, nil, RCTErrorWithMessage(error.description));
